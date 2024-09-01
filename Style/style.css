@@ -1,0 +1,111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul { 
+    list-style: none; 
+    padding-left: 5px; 
+}
+
+a { 
+    color: blue; 
+    text-decoration: none; 
+}
+
+.bar {
+    background-color: #f9f9fb;
+    padding: 15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+.content {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-areas:  "sidebar main anchors";
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 1fr);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer {
+    min-height: 50px;
+    border-top: solid 1px #fcf8f8;
+    font-size: 13px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    background-color: #ebe7e7;
+}
+
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+
+figure {
+    text-align: center;
+}
+
+table thead th {
+    background-color: rgb(230, 226, 226);
+    color: black;
+}
+
+table tbody tr {
+    background-color: rgb(247, 246, 246);
+    color: black;
+}
+
+.tabela {
+    font-size: 30px;
+}
+
+pre {
+    background-color: #f1f1f1;
+    padding: 10px; 
+    border-radius: 5px; 
+    overflow-x: auto; 
+}
+
+pre > code {
+    color: black;
+    padding-left: 10px; 
+    display: block; 
+    white-space: pre-wrap; 
+}
+.quote {
+    font-style: italic;
+    position: relative;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f1f1f1;
+    border-left: 5px solid #ccc;
+    quotes: "“" "”"; 
+}
+
+.quote::before {
+    content: open-quote; 
+    font-size: 2.5em;  
+    line-height: 0.1em; 
+    vertical-align: -0.4em; 
+    margin-right: 5px; 
+    color: #555; 
+}
+
+.quote::after {
+    content: close-quote; 
+    font-size: 2.5em; 
+    line-height: 0.1em; 
+    vertical-align: -0.4em; 
+    margin-left: 5px; 
+    color: #555; 
+}
